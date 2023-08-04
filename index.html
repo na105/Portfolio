@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Nouran's Portfolio</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- portfolio icon
+	================================================== -->
+	<link rel="icon" type="image/png" href="portfolio.png">
+
+</head>
+
+<body id="top">
+
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">NOURAN</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+
+		<section class="parallax-effect">
+			<img src="images/bg1 (2).jpg" id="bg">
+			<img src="images/moon.png" id="moon">
+			<div class="row">
+
+   				<div class="col-twelve">
+
+	   				<h5 id="hello">Hello, World.</h5>
+	   				<h1 id="text">I am Nouran Ali.</h1>
+
+	   				<p class="intro-position" id="services-intro">
+	   					<span>Web Developer</span>
+						<span>Web Designer</span>
+	   					<span>UI/UX Designer</span> 
+	   				</p>
+	   			</div>  
+				
+   			</div> 
+		</section>
+
+		<script>
+			let bg = document.getElementById('bg');
+			let moon = document.getElementById('moon');
+			let text = document.getElementById('text');
+			let hello = document.getElementById('hello');
+			let services_intro = document.getElementById('services-intro');
+
+			window.addEventListener('scroll', function(){
+				var value = window.scrollY;
+				bg.style.top = value * 1 + 'px';
+				moon.style.left = -value * 0.5 + 'px';
+				hello.style.top = value * 1 + 'px';
+				text.style.top = value * 1 + 'px';
+				services_intro.style.top = value * 1 + 'px';
+			})
+		</script>
+  		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://github.com/na105"><i class="fa fa-github"></i></a></li>
+         <li><a href="www.linkedin.com/in/nouran-ali"><i class="fa fa-linkedin"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.png" alt="Profile Picture">
+
+   				<p class="lead">I'm an avid web developer. What I care the most about is creating websites that deliver a highly executed front-end user experience with the right data. I enjoy creating UI/UX designs to life and add grpahics and animations to websites as a way to improve the user experience.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>JQuery</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent45"><span>45%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Wordpress</strong>
+				   </li>
+				   <li>
+					<div class="progress percent85"><span>85%</span></div>
+					<strong>Blender</strong>
+				</li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+
+   		<div class="col-six tab-full">
+		<br>
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>PYTHON</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>JAVASCRIPT</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>JAVA</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>C++</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>SQL</strong>
+				   </li>
+				   <li>
+					<div class="progress percent75"><span>75%</span></div>
+					<strong>Firebase</strong>
+					</li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="Resume-Nouran Ali.pdf" download title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/portfolio2.png" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">HYPHEN APP</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Web Development
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/portfolio1.png" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">NEON RACE</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Game Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/portfolio3.png"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">3D Render and Animation</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Graphics DesigN
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/portfolio4.png" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">RPA Bot Bank Processor</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Robotics Engineering
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/portfolio5_page-0001.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">PURE HEALTH HUB</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/portfolio6.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">POPULATION DENSITY DASHBOARD</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Front-End Development
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/portfolio2.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>HYPHEN APP</h4>		      
+					      <p>Created a full stack application using Flutter for frontend and Firebase for backend. The app lets users to post images or create their own art using the app's drawing features.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/na105/Hyphen_flutter_app">GitHub Link</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/portfolio1.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>NEON RACE</h4>		      
+					      <p>A functioining car web game using HTML, CSS, and JavaScript.</p>
+
+					      <div class="categories">Web Game Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/na105/Neon_Race">GitHub Link</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/portfolio3.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>3D Render and Animation</h4>		      
+					      <p>Inspired by Halloween, I created 3D render of a murder scene using Blender and used Unreal to create a short animated video.</p>
+
+					      <div class="categories">Graphics Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/na105/3D-Graphics-Animation">GitHub LinK</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/portfolio4.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>RPA Bot Bank Processor</h4>		      
+					      <p>Since RPA is increasingly used by many industries, I was interested to created a functioning RPA unattended bot using UiPath Studio that carries out a banking process by itself with no human intervention. This bot specifically processes a bunch of made up credit card application forms and then proceeds to decide whether to accept or decline them based on specifications I programmed it.</p>
+
+					      <div class="categories">Robotics Engineering</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/na105/RPA_Bank_Processing">GitHub Link</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/portfolio5_page-0001.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>PURE HEALTH HUB</h4>		      
+					      <p>A prototype of e-commerce website that provides health products for users. Created using wix.com </p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://nouran578.wixsite.com/pure-health-hub">Website Link</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/portfolio6.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>POPULATION DENSITY DASHBOARD</h4>		      
+					      <p>A dashboard that showcases the population growth from 1960 to 2013 using HTML, CSS, and JavaScript. D3.js library was heavily used to create the graphs to showcase the date.</p>
+
+					      <div class="categories">Front-End Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/na105/population-density-d3.js">GitHub Link</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   		</div>   	
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Web Development</h3>  
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+	            <div class="service-content">
+
+	            	<h3>Front-End Development</h3>
+
+	            </div> 	            	               
+
+			   </div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>UI/UX Design</h3>
+	
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Graphics Design</h3>
+
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+
+   	<div class="row contact-info">
+
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>nouran578@gmail.com</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Mobile: (+971) 50 587 5367</p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
